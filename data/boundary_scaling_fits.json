@@ -1,0 +1,29 @@
+[
+  {
+    "name": "label_box",
+    "N_min": 36.0,
+    "N_max": 400.0,
+    "fitted_slope": 0.05942772858415721,
+    "fitted_intercept": -2.4085840477633824,
+    "interpretation": "finite-range empirical log-log fit; no asymptotic law inferred",
+    "boundary_cell_slope": 0.10744565312963901
+  },
+  {
+    "name": "label_disk",
+    "N_min": 32.0,
+    "N_max": 332.0,
+    "fitted_slope": 0.3060464841238433,
+    "fitted_intercept": -2.8712735052577765,
+    "interpretation": "finite-range empirical log-log fit; no asymptotic law inferred",
+    "boundary_cell_slope": 0.5520510238512588
+  },
+  {
+    "name": "label_rotated_box",
+    "N_min": 48.0,
+    "N_max": 444.0,
+    "fitted_slope": 0.2644430533116838,
+    "fitted_intercept": -2.4018772989377952,
+    "interpretation": "finite-range empirical log-log fit; no asymptotic law inferred",
+    "boundary_cell_slope": 0.4611642492670679
+  }
+]

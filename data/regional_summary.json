@@ -1,0 +1,479 @@
+{
+  "metadata": {
+    "model": "positive zero-rest-length central springs on fixed honeycomb connectivity",
+    "mechanical_law": "T_e = c_e L_e",
+    "baseline_c": 1.7320508075688772,
+    "reference_generator_spacing": 2.0,
+    "patch_axial_radius": 22,
+    "patch_cells": 1519,
+    "vertices": 3174,
+    "edges": 4692,
+    "fixed_vertices": 270,
+    "free_vertices": 2904,
+    "regions": {
+      "inner": 37,
+      "domain": 127,
+      "core": 517,
+      "exterior": 216
+    },
+    "beta_values": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "activation_radius": 12.0,
+    "activation_transition_width": 2.0,
+    "preferred_axis_radians": 0.0,
+    "permutation_ring_width": 2.0,
+    "realizations": 40,
+    "seed": 2026091107,
+    "numpy_version": "2.4.4",
+    "scipy_version": "1.17.1",
+    "parameter_selection": "Exploratory probes at beta 0.1-1.0 and patch radii 14-48 informed selection; not preregistered.",
+    "uncertainty": "Permuted controls: empirical 2.5-97.5 percentiles across independent permutations; not confidence intervals on the mean.",
+    "interpretation": "Material coefficient distribution is matched before relaxation; relaxed lengths and tensions are not held fixed.",
+    "limitations": [
+      "Fixed topology and outer boundary; no T1 events or time evolution.",
+      "No experimentally fitted constitutive rule or biological validation.",
+      "Final networks do not generally obey T=k times original generator separation; use half-interface stress.",
+      "A local coefficient anisotropy can relax; confinement controls residual regional stress."
+    ]
+  },
+  "mechanical_validation": {
+    "max_relative_force_residual": 4.642630005103045e-14,
+    "min_face_area": 1.1219780229136065,
+    "min_face_turn": 0.25902935340197397,
+    "min_edge_length": 0.43338268137012814,
+    "crossings_all_runs": 0,
+    "max_independent_tensor_error": 2.220446049250313e-15,
+    "max_boundary_virial_error": 3.028617356903851e-10,
+    "max_confinement_relative_force_residual": 6.645795086367517e-14,
+    "max_main_or_confinement_relative_force_residual": 6.645795086367517e-14
+  },
+  "beta_half": {
+    "inner": {
+      "coherent": {
+        "beta": 0.5,
+        "condition": "coherent",
+        "realization": 0,
+        "region": "inner",
+        "n": 37,
+        "area": 129.06068323738185,
+        "regional_gap": 0.05523399107539721,
+        "local_mean_gap": 0.055234137175193494,
+        "coherence": 0.9999973549003612,
+        "normalized_gap": 0.028395971283483607,
+        "Dxx": 0.05523399107539721,
+        "Dxy2": -9.022118857708234e-15,
+        "major_axis_degrees": -4.679449400156855e-12
+      },
+      "permuted": {
+        "regional_gap": {
+          "mean": 0.04668426952962292,
+          "median": 0.04004150193171338,
+          "q025": 0.004493600468118369,
+          "q975": 0.09667003538729074
+        },
+        "local_mean_gap": {
+          "mean": 0.2479897792748737,
+          "median": 0.24977779446997886,
+          "q025": 0.2030479600224052,
+          "q975": 0.2891890834291904
+        },
+        "coherence": {
+          "mean": 0.1835925139825677,
+          "median": 0.16965511444070336,
+          "q025": 0.022423525562650943,
+          "q975": 0.35741486252327426
+        },
+        "normalized_gap": {
+          "mean": 0.02386238246443284,
+          "median": 0.020401907032366294,
+          "q025": 0.0023085766690627498,
+          "q975": 0.04981196632962183
+        },
+        "Dxx": {
+          "mean": -0.005174996520387726,
+          "median": -0.003473143905648325,
+          "q025": -0.06955926096927978,
+          "q975": 0.05921214049087724
+        },
+        "Dxy2": {
+          "mean": -0.0018958316718829815,
+          "median": -0.006969164433107728,
+          "q025": -0.0691237064342627,
+          "q975": 0.0777078591535848
+        }
+      }
+    },
+    "domain": {
+      "coherent": {
+        "beta": 0.5,
+        "condition": "coherent",
+        "realization": 0,
+        "region": "domain",
+        "n": 127,
+        "area": 442.63879918786273,
+        "regional_gap": 0.05142901018356264,
+        "local_mean_gap": 0.05220380138334368,
+        "coherence": 0.9851583375300281,
+        "normalized_gap": 0.026313549186327376,
+        "Dxx": 0.05142901018356264,
+        "Dxy2": -8.594225285931478e-15,
+        "major_axis_degrees": -4.787306184884229e-12
+      },
+      "permuted": {
+        "regional_gap": {
+          "mean": 0.007151430487734744,
+          "median": 0.006533854449879603,
+          "q025": 0.0021922273546804206,
+          "q975": 0.01387834716762358
+        },
+        "local_mean_gap": {
+          "mean": 0.21652432727171736,
+          "median": 0.21526621777686372,
+          "q025": 0.198440414158076,
+          "q975": 0.2426323615501723
+        },
+        "coherence": {
+          "mean": 0.033240534790238085,
+          "median": 0.029490417033032797,
+          "q025": 0.010172687516754198,
+          "q975": 0.06262337389172315
+        },
+        "normalized_gap": {
+          "mean": 0.0036369981625687066,
+          "median": 0.0033178474270334404,
+          "q025": 0.00111762061130154,
+          "q975": 0.007074141789113381
+        },
+        "Dxx": {
+          "mean": -0.0007748154895668623,
+          "median": -0.0012914811020227463,
+          "q025": -0.010531163437187388,
+          "q975": 0.010244120444968783
+        },
+        "Dxy2": {
+          "mean": -0.0012524476435211388,
+          "median": -0.0011554699171656324,
+          "q025": -0.010231334203408337,
+          "q975": 0.008918868576457992
+        }
+      }
+    },
+    "core": {
+      "coherent": {
+        "beta": 0.5,
+        "condition": "coherent",
+        "realization": 0,
+        "region": "core",
+        "n": 517,
+        "area": 1796.03572491288,
+        "regional_gap": 0.04991077182135419,
+        "local_mean_gap": 0.05186371465676665,
+        "coherence": 0.9623447173358675,
+        "normalized_gap": 0.025099923555210853,
+        "Dxx": 0.04991077182135419,
+        "Dxy2": -3.921556108558831e-15,
+        "major_axis_degrees": -2.2509030209790857e-12
+      },
+      "permuted": {
+        "regional_gap": {
+          "mean": 0.0027432085317813746,
+          "median": 0.002587093378106901,
+          "q025": 0.0006392576477984868,
+          "q975": 0.005379190820231117
+        },
+        "local_mean_gap": {
+          "mean": 0.08284994323508953,
+          "median": 0.08262654068591782,
+          "q025": 0.07555362735022673,
+          "q975": 0.09608816107676718
+        },
+        "coherence": {
+          "mean": 0.033401414509333885,
+          "median": 0.03183481321703417,
+          "q025": 0.008252024497195483,
+          "q975": 0.06837260420042905
+        },
+        "normalized_gap": {
+          "mean": 0.001377383711931076,
+          "median": 0.0012993690310909216,
+          "q025": 0.00032081412470871335,
+          "q975": 0.002702396721616904
+        },
+        "Dxx": {
+          "mean": -4.750113668298109e-05,
+          "median": -0.0003839324013563951,
+          "q025": -0.003746563117231845,
+          "q975": 0.0046245886928602984
+        },
+        "Dxy2": {
+          "mean": -0.00016728200943968326,
+          "median": 0.00018766789903536398,
+          "q025": -0.0047560602094611605,
+          "q975": 0.0036353300594680663
+        }
+      }
+    },
+    "exterior": {
+      "coherent": {
+        "beta": 0.5,
+        "condition": "coherent",
+        "realization": 0,
+        "region": "exterior",
+        "n": 216,
+        "area": 748.3331830888848,
+        "regional_gap": 0.049051696145874873,
+        "local_mean_gap": 0.05034521711192964,
+        "coherence": 0.9743069741227066,
+        "normalized_gap": 0.024517394361913414,
+        "Dxx": 0.049051696145874873,
+        "Dxy2": -1.171446248882832e-15,
+        "major_axis_degrees": -6.841651895972473e-13
+      },
+      "permuted": {
+        "regional_gap": {
+          "mean": 0.002725250009438918,
+          "median": 0.0025731110962621756,
+          "q025": 0.0006559312406836092,
+          "q975": 0.005395497252827499
+        },
+        "local_mean_gap": {
+          "mean": 0.015429559037354167,
+          "median": 0.015070363656178684,
+          "q025": 0.011545770216766527,
+          "q975": 0.02084627283560584
+        },
+        "coherence": {
+          "mean": 0.18591656015858274,
+          "median": 0.1699006018572568,
+          "q025": 0.04492360625992178,
+          "q975": 0.38032769969679636
+        },
+        "normalized_gap": {
+          "mean": 0.0013625721174728082,
+          "median": 0.0012865380655023538,
+          "q025": 0.00032795343999885053,
+          "q975": 0.0026976883878542064
+        },
+        "Dxx": {
+          "mean": -6.239398975335398e-05,
+          "median": -0.0003803231913514179,
+          "q025": -0.003789896102049016,
+          "q975": 0.004578033102387555
+        },
+        "Dxy2": {
+          "mean": -0.0001519624485225365,
+          "median": 0.0001815441765615144,
+          "q025": -0.004710359149835927,
+          "q975": 0.003577052204288894
+        }
+      }
+    }
+  },
+  "confinement": [
+    {
+      "patch_radius": 14,
+      "patch_cells": 631,
+      "boundary_min_radius": 24.846193538112296,
+      "patch_area": 2185.848119151923,
+      "n": 127,
+      "area": 441.61608325200814,
+      "regional_gap": 0.12079493734779906,
+      "local_mean_gap": 0.12112948502687165,
+      "coherence": 0.9972380987255219,
+      "normalized_gap": 0.061708062601144205,
+      "Dxx": 0.12079493734779906,
+      "Dxy2": 1.329670541647962e-15,
+      "major_axis_degrees": 3.153464534691052e-13,
+      "relative_force_residual": 1.619673706194016e-14,
+      "min_turn": 0.6648946944472629,
+      "crossings": 0
+    },
+    {
+      "patch_radius": 18,
+      "patch_cells": 1027,
+      "boundary_min_radius": 31.770006819850277,
+      "patch_area": 3557.6323587464726,
+      "n": 127,
+      "area": 442.2607087820827,
+      "regional_gap": 0.07495008389671048,
+      "local_mean_gap": 0.07548070487446508,
+      "coherence": 0.9929701109888006,
+      "normalized_gap": 0.03833314673922926,
+      "Dxx": 0.07495008389671048,
+      "Dxy2": -3.1859146183563954e-15,
+      "major_axis_degrees": -1.2177402080857803e-12,
+      "relative_force_residual": 1.712288104394718e-14,
+      "min_turn": 0.665876254080598,
+      "crossings": 0
+    },
+    {
+      "patch_radius": 22,
+      "patch_cells": 1519,
+      "boundary_min_radius": 38.695391629150535,
+      "patch_area": 5261.970353394248,
+      "n": 127,
+      "area": 442.63879918786273,
+      "regional_gap": 0.05142901018356264,
+      "local_mean_gap": 0.05220380138334368,
+      "coherence": 0.9851583375300281,
+      "normalized_gap": 0.026313549186327376,
+      "Dxx": 0.05142901018356264,
+      "Dxy2": -8.594225285931478e-15,
+      "major_axis_degrees": -4.787306184884229e-12,
+      "relative_force_residual": 2.2050294896112483e-14,
+      "min_turn": 0.6664471687448968,
+      "crossings": 0
+    },
+    {
+      "patch_radius": 28,
+      "patch_cells": 2437,
+      "boundary_min_radius": 49.08496035786657,
+      "patch_area": 8442.015636090706,
+      "n": 127,
+      "area": 442.9572671708952,
+      "regional_gap": 0.03301576897003387,
+      "local_mean_gap": 0.034242163626870284,
+      "coherence": 0.9641846622135161,
+      "normalized_gap": 0.016895890604268847,
+      "Dxx": 0.03301576897003387,
+      "Dxy2": 1.290335822706415e-15,
+      "major_axis_degrees": 1.119628576010456e-12,
+      "relative_force_residual": 3.051906440915445e-14,
+      "min_turn": 0.6669272052371548,
+      "crossings": 0
+    },
+    {
+      "patch_radius": 36,
+      "patch_cells": 3997,
+      "boundary_min_radius": 62.93912402737531,
+      "patch_area": 13846.014155705605,
+      "n": 127,
+      "area": 443.1725792444244,
+      "regional_gap": 0.021171363958827114,
+      "local_mean_gap": 0.02342954722554451,
+      "coherence": 0.9036181431515088,
+      "normalized_gap": 0.010835401601579371,
+      "Dxx": 0.021171363958827114,
+      "Dxy2": -3.1796880944393595e-15,
+      "major_axis_degrees": -4.3025737107365685e-12,
+      "relative_force_residual": 4.485461191959537e-14,
+      "min_turn": 0.6672515153551912,
+      "crossings": 0
+    },
+    {
+      "patch_radius": 48,
+      "patch_cells": 7057,
+      "boundary_min_radius": 83.72176140844944,
+      "patch_area": 24446.165098027137,
+      "n": 127,
+      "area": 443.322571980135,
+      "regional_gap": 0.013175170619761267,
+      "local_mean_gap": 0.017011308223640657,
+      "coherence": 0.7744948505166521,
+      "normalized_gap": 0.00674323110510504,
+      "Dxx": 0.013175170619761267,
+      "Dxy2": -8.716704027022825e-15,
+      "major_axis_degrees": -1.8953468096420985e-11,
+      "relative_force_residual": 6.645795086367517e-14,
+      "min_turn": 0.6674773789568436,
+      "crossings": 0
+    }
+  ],
+  "uniform": [
+    {
+      "beta": 0.0,
+      "analytic_gap": 7.557131904205646e-16,
+      "analytic_normalized_gap": 3.778565952102822e-16,
+      "analytic_sigma_xx": 0.9999999999999999,
+      "analytic_sigma_yy": 1.0000000000000004,
+      "sublattice_shift_x": 1.2819751242557092e-16,
+      "sublattice_shift_y": 1.2819751242557092e-16,
+      "n": 127,
+      "area": 439.94090512246936,
+      "regional_gap": 3.836145009872235e-15,
+      "local_mean_gap": 8.000284225285788e-15,
+      "coherence": null,
+      "normalized_gap": 1.9180725049361176e-15,
+      "Dxx": -2.8021755471921692e-15,
+      "Dxy2": -2.619889451768131e-15,
+      "major_axis_degrees": 0.0
+    },
+    {
+      "beta": 0.1,
+      "analytic_gap": 0.1023758311206987,
+      "analytic_normalized_gap": 0.05118365806192256,
+      "analytic_sigma_xx": 1.051271096376024,
+      "analytic_sigma_yy": 0.9488952652553252,
+      "sublattice_shift_x": 2.557658739835242e-16,
+      "sublattice_shift_y": 0.05622404521517053,
+      "n": 127,
+      "area": 439.9717627832353,
+      "regional_gap": 0.10223552484275793,
+      "local_mean_gap": 0.10223571017172349,
+      "coherence": 0.9999981872384389,
+      "normalized_gap": 0.05111369364459658,
+      "Dxx": 0.10223552484275793,
+      "Dxy2": 6.2901105792620655e-15,
+      "major_axis_degrees": 1.7625810080038694e-12
+    },
+    {
+      "beta": 0.25,
+      "analytic_gap": 0.2637212694532418,
+      "analytic_normalized_gap": 0.13169104058930925,
+      "analytic_sigma_xx": 1.1331484530668263,
+      "analytic_sigma_yy": 0.8694271836135845,
+      "sublattice_shift_x": 2.946974706789338e-16,
+      "sublattice_shift_y": 0.13436857765438778,
+      "n": 127,
+      "area": 440.1377892368727,
+      "regional_gap": 0.2628251893382521,
+      "local_mean_gap": 0.26282562254729375,
+      "coherence": 0.9999983517244724,
+      "normalized_gap": 0.13125129023148652,
+      "Dxx": 0.2628251893382521,
+      "Dxy2": -3.1847572813296497e-15,
+      "major_axis_degrees": -3.471378665286661e-13
+    },
+    {
+      "beta": 0.5,
+      "analytic_gap": 0.5480536502356385,
+      "analytic_normalized_gap": 0.27131406657892193,
+      "analytic_sigma_xx": 1.2840254166877414,
+      "analytic_sigma_yy": 0.7359717664521029,
+      "sublattice_shift_x": 6.461198754150872e-16,
+      "sublattice_shift_y": 0.24642730461686196,
+      "n": 127,
+      "area": 440.73659479131845,
+      "regional_gap": 0.5444040712567012,
+      "local_mean_gap": 0.5444048088250145,
+      "coherence": 0.9999986451840591,
+      "normalized_gap": 0.2696390494022346,
+      "Dxx": 0.5444040712567012,
+      "Dxy2": 5.981642292783179e-16,
+      "major_axis_degrees": 3.1476882340564835e-14
+    },
+    {
+      "beta": 0.75,
+      "analytic_gap": 0.8453950650041084,
+      "analytic_normalized_gap": 0.409474026558742,
+      "analytic_sigma_xx": 1.4549914146182015,
+      "analytic_sigma_yy": 0.609596349614093,
+      "sublattice_shift_x": 8.338420886944881e-16,
+      "sublattice_shift_y": 0.33545838377319975,
+      "n": 127,
+      "area": 441.6978685549354,
+      "regional_gap": 0.8371723306110711,
+      "local_mean_gap": 0.8371732424541881,
+      "coherence": 0.9999989108071414,
+      "normalized_gap": 0.4061507796052281,
+      "Dxx": 0.8371723306110711,
+      "Dxy2": -7.132760205740819e-15,
+      "major_axis_degrees": -2.440817984091227e-13
+    }
+  ]
+}

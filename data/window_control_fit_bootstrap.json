@@ -1,0 +1,149 @@
+{
+  "boundary_scaling_realizations.csv": [
+    {
+      "group": "label_box",
+      "N_min": 36.0,
+      "N_max": 400.0,
+      "realizations": 60,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091500,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.0594277285841573,
+        "q025": 0.012133766596758177,
+        "q975": 0.10643182753066602
+      },
+      "boundary_cells": {
+        "slope": 0.10744565312963977,
+        "q025": 0.022200373562116803,
+        "q975": 0.19275910923446338
+      }
+    },
+    {
+      "group": "label_disk",
+      "N_min": 32.0,
+      "N_max": 332.0,
+      "realizations": 60,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091501,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.3060464841238433,
+        "q025": 0.23295407752019778,
+        "q975": 0.3808223574700229
+      },
+      "boundary_cells": {
+        "slope": 0.5520510238512579,
+        "q025": 0.4214349900968467,
+        "q975": 0.6871251744908305
+      }
+    },
+    {
+      "group": "label_rotated_box",
+      "N_min": 48.0,
+      "N_max": 444.0,
+      "realizations": 60,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091502,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.2644430533116838,
+        "q025": 0.19786762684856662,
+        "q975": 0.3287920311829917
+      },
+      "boundary_cells": {
+        "slope": 0.461164249267068,
+        "q025": 0.3456447179971283,
+        "q975": 0.5727355883200689
+      }
+    }
+  ],
+  "driven_scaling_realizations.csv": [
+    {
+      "group": "0.0",
+      "N_min": 64.0,
+      "N_max": 576.0,
+      "realizations": 25,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091510,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.05885611564108954,
+        "q025": -0.0366038129029001,
+        "q975": 0.1657281293703416
+      }
+    },
+    {
+      "group": "0.05",
+      "N_min": 64.0,
+      "N_max": 576.0,
+      "realizations": 25,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091511,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.08180358741568462,
+        "q025": -0.020114432294782967,
+        "q975": 0.18922117421170323
+      }
+    },
+    {
+      "group": "0.2",
+      "N_min": 64.0,
+      "N_max": 576.0,
+      "realizations": 25,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091512,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.11399723472917919,
+        "q025": -0.02250010650037584,
+        "q975": 0.24052184111259203
+      }
+    }
+  ],
+  "polarized_scaling_realizations.csv": [
+    {
+      "group": "0.0",
+      "N_min": 64.0,
+      "N_max": 576.0,
+      "realizations": 25,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091520,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": -0.003994847713323715,
+        "q025": -0.11575798432591483,
+        "q975": 0.11821427817799884
+      }
+    },
+    {
+      "group": "0.1",
+      "N_min": 64.0,
+      "N_max": 576.0,
+      "realizations": 25,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091521,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.9996646158433266,
+        "q025": 0.9990411811398828,
+        "q975": 1.0002826849160509
+      }
+    },
+    {
+      "group": "0.4",
+      "N_min": 64.0,
+      "N_max": 576.0,
+      "realizations": 25,
+      "bootstrap_draws": 2000,
+      "bootstrap_seed": 2026091522,
+      "interpretation": "paired-realization bootstrap of descriptive finite-range log-log fit; not asymptotic uncertainty",
+      "N": {
+        "slope": 0.9998192045575703,
+        "q025": 0.9992276957555324,
+        "q975": 1.000405608621276
+      }
+    }
+  ]
+}

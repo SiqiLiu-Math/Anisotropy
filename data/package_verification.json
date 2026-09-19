@@ -1,0 +1,193 @@
+{
+  "status": "all checks passed",
+  "core": {
+    "domain_classifier": {
+      "convex_accepted": true,
+      "self_intersecting_pentagram_rejected": true,
+      "clockwise_and_concave_rejected": true,
+      "outside_center_identified": true,
+      "batch_classification_consistent": true
+    },
+    "independent_tensor": {
+      "max_absolute_tensor_error": 1.4210854715202004e-14,
+      "max_absolute_trace_error": 8.881784197001252e-15,
+      "max_metric_error": 3.552713678800501e-15,
+      "polygon_cases": 20,
+      "includes_negative_signed_edge_weights": true
+    },
+    "rigid_transform": {
+      "tensor_error": 5.551115123125783e-16,
+      "spin2_error": 6.77599954797753e-16
+    },
+    "cyclic_polygons": {
+      "cases": 70,
+      "max_isotropy_error": 1.7763568394002505e-15
+    },
+    "linear_response": {
+      "max_radial_derivative_error": 1.0652624567254952e-09,
+      "max_angular_derivative_magnitude": 8.893726678074344e-10,
+      "finite_difference_step": 1e-06
+    },
+    "cartesian_noise_linear_covariance": {
+      "fixed_known_center": true,
+      "radius": 1.37,
+      "max_covariance_error": 8.593525890887577e-11,
+      "covariance_eigenvalues_per_unit_coordinate_variance": {
+        "3": [
+          0.35519562391844195,
+          0.3551956239952577
+        ],
+        "4": [
+          6.56053811627633e-22,
+          0.5327934358989334
+        ],
+        "5": [
+          0.21311737436171105,
+          0.21311737438993006
+        ],
+        "6": [
+          0.17759781196862398,
+          0.17759781203039832
+        ],
+        "7": [
+          0.15222669598618585,
+          0.1522266960034646
+        ],
+        "8": [
+          0.13319835891956636,
+          0.13319835902774582
+        ],
+        "9": [
+          0.11839854130967664,
+          0.11839854133606345
+        ],
+        "10": [
+          0.10655868716895818,
+          0.10655868718947045
+        ],
+        "11": [
+          0.09687153379442684,
+          0.09687153380034659
+        ],
+        "12": [
+          0.08879890595431454,
+          0.08879890597935713
+        ]
+      },
+      "n4_is_rank_one": true
+    },
+    "noncyclic_isotropic_quadrilateral": {
+      "radii": [
+        1.2,
+        1,
+        0.7398810811544518,
+        1
+      ],
+      "root_residual": 0.0,
+      "W_real": 4.440892098500626e-16,
+      "W_imag": 0.0,
+      "cyclicity_gap_abs_r1r3_minus_1": 0.11214270261465786
+    },
+    "same_radii_different_angles": {
+      "radii": [
+        1.01,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "W_A": [
+        0.017577717877822696,
+        0.0
+      ],
+      "W_B": [
+        0.010689260322831906,
+        -5.551115123125783e-17
+      ],
+      "delta_A": 0.017577717877822696,
+      "delta_B": 0.010689260322831906,
+      "difference_abs": 0.00688845755499079
+    },
+    "embedded_cell": {
+      "max_closed_axial_coordinate_error": 2.914335439641036e-16,
+      "max_exact_axial_W_error": 4.440892098500626e-16,
+      "max_extrapolated_quadratic_coefficient_error": 8.200674313358585e-11,
+      "off_axis_directions_checked": 7
+    },
+    "status": "all checks passed"
+  },
+  "original_figures": {
+    "figure6_points": 1600,
+    "figure6_max_error": 1.7763568394002505e-15,
+    "figure7_points": 2285,
+    "figure7_max_error": 9.35015953551499e-16,
+    "figure5_fits": 13,
+    "figure5_max_fit_error": 3.552713678800501e-15,
+    "figure5_independently_regenerated_groups": [
+      {
+        "panel": "C",
+        "n": 10,
+        "sigma": 0.1,
+        "angular_sigma": 0.0,
+        "accepted": 6000,
+        "attempted": 9612,
+        "max_statistic_error": 5.551115123125783e-17
+      },
+      {
+        "panel": "C",
+        "n": 3,
+        "sigma": 0.1,
+        "angular_sigma": 0.0,
+        "accepted": 6000,
+        "attempted": 6000,
+        "max_statistic_error": 0.0
+      },
+      {
+        "panel": "B",
+        "n": 6,
+        "sigma": 0.1,
+        "angular_sigma": 0.0,
+        "accepted": 20000,
+        "attempted": 20000,
+        "max_statistic_error": 0.0
+      },
+      {
+        "panel": "D",
+        "n": 6,
+        "sigma": 0.1,
+        "angular_sigma": 0.1,
+        "accepted": 4000,
+        "attempted": 4000,
+        "max_statistic_error": 2.7755575615628914e-17
+      }
+    ]
+  },
+  "saved_tissue_windows": {
+    "realization_window_rows_recomputed": 2400,
+    "summary_rows_recomputed": 12,
+    "max_point_statistic_error": 1.6653345369377348e-16,
+    "neighbor_correlation": -0.3324037163561371
+  },
+  "tissue_disorder_and_correlations": {
+    "disorder_cell_records": 80000,
+    "disorder_summary_rows": 5,
+    "correlation_shells": 8,
+    "max_point_and_bootstrap_interval_error": 5.551115123125783e-17
+  },
+  "sha256": {
+    "code/polygon.py": "75adc30130860a595704ffc56f5d2c221da27a917de5163d9b0130dca98cf7e4",
+    "code/run_original_figures.py": "924ebf2d6ad3873e7e82444373348129b906c25b0a14d0a4a952c626fd6baaba",
+    "code/run_boundary_identity.py": "4f94718b020062500d8cdeb1815bbba2a94f010da1749a3fbf102f35b45a38e7",
+    "code/run_tissue.py": "f7b2bc03cdf1b4805de66960a17b9c8538ea53bb49c8f916448fd87de7dbe9f5",
+    "code/generate_tissue_windows.py": "a9d4498136d805d2bf3e09c5bd81d511b00180c648a6e1d18bb50a9b7b87c11f",
+    "code/verify_core.py": "0938747ab1ce6146c90247854ee7b21b982974609f08cb8f3dab153e4135acf1",
+    "code/verify_package.py": "8b893278edf032f9692ad689abc65460ffee69a5e921af746ef68b89491b63e3",
+    "code/run_regional_mechanics.py": "2abfbb944fe4853b312fc7480b1041436023a9bde30fc822db116e70dc06ebc2",
+    "code/verify_regional.py": "b9ef72e90137fcdeefae84d7903ecb0bc1bb32ee9c6da11fb7b236f37792f155",
+    "data/tissue_cells.npz": "ae3bb0afc41bbcaa09aa46cbb3b5960ebf99b472e498a1cb573d7c6d49452c26",
+    "data/tissue_disorder_cells.csv": "e37d041ea86a3016ef64eaeab4532db9f41611c4a20990d46c7a5503fa73396a",
+    "data/tissue_summary.csv": "60e5b7db9baddc0d830d747caabf641c22c9503ae25a7d4d1c91366a990a3304"
+  },
+  "scope": "Numerical and code verification of the supplied model and benchmark data; does not establish biological validity, empirical utility, or completeness of the literature."
+}

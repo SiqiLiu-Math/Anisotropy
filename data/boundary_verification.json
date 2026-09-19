@@ -1,0 +1,15 @@
+{
+  "boundary_windows": 2400,
+  "boundary_realizations": 200,
+  "max_complex_boundary_identity_error": 1.718738241967731e-13,
+  "maximum_bound_violation": 0.0,
+  "maximum_squeezed_Bravais_cell_gap": 8.881784197001252e-15,
+  "maximum_affine_tensor_error": 3.979039320256561e-13,
+  "squeeze_amplitudes": 41,
+  "localized_controls": 80,
+  "maximum_localized_regional_gap": 1.3642883633997482e-12,
+  "maximum_localized_identity_error": 1.6428448357939493e-12,
+  "localized_eta_point2_mean_local_gap": 0.10061822440242947,
+  "affine_force_convention": "F f, determinant(F)=1; ordinary Voronoi is not recomputed",
+  "provenance": "Retained tissue cache regenerated from its recorded seed; boundary assembled independently from exterior ridges"
+}

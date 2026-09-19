@@ -1,0 +1,26 @@
+[
+  {
+    "eps": 0.0,
+    "N_min": 64,
+    "N_max": 576,
+    "fitted_slope": 0.05885611564108954,
+    "fitted_intercept": -2.347212196928096,
+    "interpretation": "finite-range empirical log-log fit; no asymptotic law inferred"
+  },
+  {
+    "eps": 0.05,
+    "N_min": 64,
+    "N_max": 576,
+    "fitted_slope": 0.08180358741568462,
+    "fitted_intercept": -2.458127381337148,
+    "interpretation": "finite-range empirical log-log fit; no asymptotic law inferred"
+  },
+  {
+    "eps": 0.2,
+    "N_min": 64,
+    "N_max": 576,
+    "fitted_slope": 0.11399723472917919,
+    "fitted_intercept": -2.316222243285262,
+    "interpretation": "finite-range empirical log-log fit; no asymptotic law inferred"
+  }
+]

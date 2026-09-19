@@ -1,0 +1,42 @@
+{
+  "model": "positive zero-rest-length central springs on fixed honeycomb connectivity",
+  "mechanical_law": "T_e = c_e L_e",
+  "baseline_c": 1.7320508075688772,
+  "reference_generator_spacing": 2.0,
+  "patch_axial_radius": 22,
+  "patch_cells": 1519,
+  "vertices": 3174,
+  "edges": 4692,
+  "fixed_vertices": 270,
+  "free_vertices": 2904,
+  "regions": {
+    "inner": 37,
+    "domain": 127,
+    "core": 517,
+    "exterior": 216
+  },
+  "beta_values": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "activation_radius": 12.0,
+  "activation_transition_width": 2.0,
+  "preferred_axis_radians": 0.0,
+  "permutation_ring_width": 2.0,
+  "realizations": 40,
+  "seed": 2026091107,
+  "numpy_version": "2.4.4",
+  "scipy_version": "1.17.1",
+  "parameter_selection": "Exploratory probes at beta 0.1-1.0 and patch radii 14-48 informed selection; not preregistered.",
+  "uncertainty": "Permuted controls: empirical 2.5-97.5 percentiles across independent permutations; not confidence intervals on the mean.",
+  "interpretation": "Material coefficient distribution is matched before relaxation; relaxed lengths and tensions are not held fixed.",
+  "limitations": [
+    "Fixed topology and outer boundary; no T1 events or time evolution.",
+    "No experimentally fitted constitutive rule or biological validation.",
+    "Final networks do not generally obey T=k times original generator separation; use half-interface stress.",
+    "A local coefficient anisotropy can relax; confinement controls residual regional stress."
+  ]
+}
